@@ -1,17 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM PROJECTS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <style>
+        body {
+            background-color: #3e69be
+        }
+
+        .landingPage {
+            background: url('bg1.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            padding-left: 50px;
+        }
+
+        .overlayContent {
+            color: white;
+            text-align: center;
+        }
+
+        .overlayContent h1 {
+            font-size: 48px;
+        }
+
+        @media (max-width: 1000px) {
+            .landingPage {
+                height: 80vh;
+            }
+
+            .overlayContent h1 {
+                font-size: 30px;
+            }
+
+            .overlayContent .btn {
+                font-size: 15px;
+                padding: 8px 12px;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            .landingPage {
+                height: 50vh;
+            }
+
+            .overlayContent h1 {
+                font-size: 25px;
+            }
+
+            .overlayContent .btn {
+                font-size: 10px;
+                padding: 5px 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .landingPage {
+                height: 40vh;
+            }
+
+            .overlayContent h1 {
+                font-size: 15px;
+            }
+
+
+            .overlayContent .btn {
+                font-size: 10px;
+                padding: 1px 5px;
+            }
+        }
+
+        .myWorks {
+            background-color: #7394d7;
+            text-align: center;
+            color: white;
+            height: 200px;
+            padding: 50px;
+        }
+
         .card {
-            width: 300px;
-            height: 450px;
+            width: 100%;
+            height: 100%;
+            background-color: #f9e26e;
+            border-radius: 10px;
+            border-color: white;
+            font-family: verdana;
+            padding: 3px;
         }
 
         .card-img-top {
@@ -20,236 +103,100 @@
             object-fit: cover;
         }
 
-        blockquote {
-            background: #f8f9fa;
-            border-left: 5px solid #001489;
-            padding: 10px 15px;
-            border-radius: 5px;
+        .btn {
+            background-color: #3e69be;
+            color: white;
         }
 
-        .carousel-inner img {
-            max-height: 500px;
-            object-fit: cover;
+        .btn:hover {
+            background-color: #7394d7;
+            color: white;
         }
 
-        .foodname {
-            background-color: #001489;
-            padding: 5px;
-            text-align: center;
+        .disabled {
+            pointer-events: none;
+            opacity: 0.65;
+            cursor: not-allowed;
         }
     </style>
-
 </head>
 
 <body>
-    <img src="pic1.png" class="img-fluid">
-    <div class="container">
-        <h1 class="mt-5" style="text-align:center; color:#001489;">What's with Santorini?</h1>
-        <div class=" row my-5">
-            <!--Places Section -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card m-3 shadow">
-                    <img src="https://etgstagingstorage.blob.core.windows.net/etgfilescontainer/etg/media/blogs/greece/santorini-virgin-mary-catholic-santorini-church.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Virgin Mary Catholic Church</h5>
-                        <p class="card-text">One of the most snapshot-worthy spots in Fira. Its iconic blue dome is the
-                            capital’s most recognisable structure, making it a favourite backdrop for many wedding
-                            photos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card m-3 shadow">
-                    <img src="https://etgstagingstorage.blob.core.windows.net/etgfilescontainer/etg/media/blogs/greece/santorini-panagia-platsani-church.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Panagia Platsani Church</h5>
-                        <p class="card-text">This place of worship is dedicated to the Akathist Hymn of the Most Holy
-                            Theotokos. Constructed initially inside the walls of Oia, the Panagia Platsani Church was
-                            moved
-                            to its current location, the village centre.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card m-3 shadow">
-                    <img src="https://etgstagingstorage.blob.core.windows.net/etgfilescontainer/etg/media/blogs/greece/santorini-red-beach-santorini.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Red Beach</h5>
-                        <p class="card-text">The beach is easily accessible from the town of Akrotiri, either by taking
-                            the bus, driving down a rocky path, or riding a boat from nearby ports. It got its distinct
-                            red colour from the pulverised rocks from a nearby caldera.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card m-3 shadow">
-                    <img src="https://etgstagingstorage.blob.core.windows.net/etgfilescontainer/etg/media/blogs/greece/santorini-kamari-beach-with-boat.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Kamari Beach</h5>
-                        <p class="card-text">Kamari Beach is a top tourist attraction in Santorini, Greece, with its
-                            many exciting activities, such as swimming, sunbathing and snorkelling. There are also many
-                            restaurants, shops and cafes lining its beachfront for your convenience.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card m-3 shadow">
-                    <img src="https://etgstagingstorage.blob.core.windows.net/etgfilescontainer/etg/media/blogs/greece/santorini-caldera.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">The Caldera of Santorini</h5>
-                        <p class="card-text">The caldera was formed by a massive volcanic eruption that caused the
-                            collapse of the Minoan civilization. The eruption gave birth to Thira, the island’s capital,
-                            while succeeding eruptions formed the smaller, nearby islands.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card m-3 shadow">
-                    <img src="https://etgstagingstorage.blob.core.windows.net/etgfilescontainer/etg/media/blogs/greece/santorini-pyrgos.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Pyrgos</h5>
-                        <p class="card-text">The small inland city of Pyrgos was once the capital of Santorini before it
-                            became Fira in 1800. It has a Venetian castle perched on the summit of a hill, along with
-                            many other white-washed Cycladic cottages surrounding it.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card m-3 shadow">
-                    <img src="https://etgstagingstorage.blob.core.windows.net/etgfilescontainer/etg/media/blogs/greece/santorini-perissa.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Perissa Beach</h5>
-                        <p class="card-text">Tourists can enjoy an impressive sight of fine, black sand, lush tamarisk
-                            trees and dark blue waters. It is worth noting that the beach has received the Blue Flag
-                            award for its impeccable cleanliness.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card m-3 shadow">
-                    <img src="https://etgstagingstorage.blob.core.windows.net/etgfilescontainer/etg/media/blogs/greece/santorini-three-bells.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">The three bells of Fira</h5>
-                        <p class="card-text">This Greek Catholic church is famous for its three distinct bells, iconic
-                            blue dome and Cycladic architecture. It is located above the cliffs overlooking western
-                            Santorini, making it one of the best vantage points on the island.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Quote Section -->
-    <div class="container mt-5">
-        <div class="row my-5">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                <h1 style="color:#001489">Local Dishes</h1>
-                <blockquote class="blockquote text-start">
-                    <p class="mb-4">"Experiencing food in Santorini is like tasting the essence of the island
-                        itself—fresh, vibrant, and unforgettable. Each bite of grilled octopus, drizzled with local
-                        olive oil and lemon, carries the salty breeze of the Aegean. The tomatoes, bursting with
-                        sweetness, are sun-kissed jewels from volcanic soil. And the creamy fava dip, paired with warm,
-                        crusty bread, feels like a comforting embrace. Dining here isn’t just about the food; it’s about
-                        savoring the moment, surrounded by the whitewashed cliffs and the endless blue horizon."</p>
-                    <footer class="blockquote-footer">Christell Angelica Chavez</footer>
-                </blockquote>
-            </div>
 
-            <!--Food Section -->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active position-relative">
-                            <img src="https://goguides.azureedge.net/media/ut2ekqjd/8b86f2c9-8fe8-4cc3-88d7-3f4bdfe4dae6.jpg?anchor=center&mode=crop&width=1600&height=1066&quality=50"
-                                class="d-block w-100">
-                            <div class="carousel-caption d-none d-md-flex">
-                                <h5 class="foodname">Fava me koukia</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                            <img src="https://goguides.azureedge.net/media/iylbxqay/584329f7-9cfd-4131-8127-7b898eed62a9.jpg?anchor=center&mode=crop&width=1600&height=1066&quality=50"
-                                class="d-block w-100">
-                            <div class="carousel-caption d-none d-md-flex">
-                                <h5 class="foodname">Domatokeftethes</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                            <img src="https://goguides.azureedge.net/media/n3gaymy3/7615e822-9bf0-4ab7-b67f-08ef01c906ee.jpg?anchor=center&mode=crop&width=1600&height=1066&quality=50"
-                                class="d-block w-100">
-                            <div class="carousel-caption d-none d-md-flex">
-                                <h5 class="foodname">Melitzanosalata</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                            <img src="https://goguides.azureedge.net/media/p0yp5bsg/cae1b153-c86b-4089-8b3b-4cf82c8ecad8.jpg?anchor=center&mode=crop&width=1600&height=1066&quality=50"
-                                class="d-block w-100">
-                            <div class="carousel-caption d-none d-md-flex">
-                                <h5 class="foodname">Apochti</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                            <img src="https://goguides.azureedge.net/media/ftqjwz0v/abc3854e-4df3-487e-ba5f-cb0e015f4f20.jpg?anchor=center&mode=crop&width=1600&height=1066&quality=50"
-                                class="d-block w-100">
-                            <div class="carousel-caption d-none d-md-flex">
-                                <h5 class="foodname">Spanakopita</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                            <img src="https://goguides.azureedge.net/media/fnepdycu/7fea2daf-d261-457b-b1f8-9588962dbc3b.jpg?anchor=center&mode=crop&width=1600&height=1066&quality=50"
-                                class="d-block w-100">
-                            <div class="carousel-caption d-none d-md-flex">
-                                <h5 class="foodname">Keftes/kofta</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                            <img src="https://goguides.azureedge.net/media/1jrj5exc/f9a51ca0-a2a5-463a-9b3b-07d51fcd8eed.jpg?anchor=center&mode=crop&width=1600&height=1066&quality=50"
-                                class="d-block w-100">
-                            <div class="carousel-caption d-none d-md-flex">
-                                <h5 class="foodname">Chlorotyri</h5>
-                            </div>
+    <div class="landingPage">
+        <div class="overlayContent">
+            <h1 style="color: #3e69be;">CHRISTELL ANGELICA D. CHAVEZ</h1>
+            <a href="#myWorks" class="btn btn-lg" style="background-color: #3e69be; color: white;">View
+                Works</a>
+        </div>
+    </div>
+
+    <div class="myWorks" id="myWorks">
+        <h1 class="mt-0">My works</h1>
+        <h5>Systems Administration and Maintenance Projects</h5>
+    </div>
+
+    <div class="container">
+        <div class="row g-4 my-5">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow">
+                    <img src="pic1.png" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title" style="text-align: center;"><strong>Activity 2</strong></h5>
+                        <p class="card-text flex-grow-1">Create an HTML website about a place in the world.</p>
+                        <div class="text-center mt-auto">
+                            <a href="activity2.html" class="btn btn-lg">Open</a>
                         </div>
                     </div>
-                    <!-- Carousel controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow">
+                    <img src="pic2.png" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title" style="text-align: center;"><strong>Activity 3</strong></h5>
+                        <p class="card-text flex-grow-1">Create a section of your homepage containing buttons/panels
+                            dedicated to your activities in this course.</p>
+                        <div class="text-center mt-auto">
+                            <a href="#" class="btn btn-lg">Open</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow">
+                    <img src="soon.png" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title" style="text-align: center;"><strong> 🛠️ Under Construction</strong></h5>
+                        <p class="card-text flex-grow-1">Intended for future SAM projects.</p>
+                        <div class="text-center mt-auto">
+                            <a href="#" class="btn btn-lg disabled">Open</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow">
+                    <img src="soon.png" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title" style="text-align: center;"><strong> 🛠️ Under Construction</strong></h5>
+                        <p class="card-text flex-grow-1">Intended for future SAM projects.</p>
+                        <div class="text-center mt-auto">
+                            <a href="#" class="btn btn-lg disabled">Open</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
+
     <footer class="bg-body-tertiary text-center text-lg-start">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 Copyright:
-            <a class="text-body">Christell Angelica Chavez</a>
+        <div class="text-center p-2" style="background-color: #f9e26e;">
+            <p>Christell Angelica Chavez<br>© 2024 Copyright</p>
         </div>
     </footer>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
